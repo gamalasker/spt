@@ -1,0 +1,648 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+@media screen and (min-width: 701px) {
+  .flip-card {
+  background-color: transparent;
+  width: 320px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 10px;
+  display: inline-block;
+}
+
+
+}
+
+@media screen and (max-width: 700px) {
+  .flip-card {
+    background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 10px auto;
+  }
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: rgb(216, 190, 190);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+.auto-style1 {
+	text-align: right;
+	direction: rtl;
+}
+.auto-style2 {
+	font-size: large;
+}
+.auto-style3 {
+	text-align: right;
+	direction: rtl;
+	font-size: x-large;
+}
+.auto-style4 {
+	direction: rtl;
+	font-size: x-large;
+}
+
+.image {
+  border-radius: 10px;
+}
+</style>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+</head>
+<body>
+  <h1>Les sports d’équipe / Les sports collectifs</h1> 
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/foot.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>le football </h1> 
+      <h1>Je jou au football </h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/basketball.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le basketball</h1> 
+      <h1>كره السلة</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/handball.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1><h1>Le handball</h1> </h1> 
+      <h1>كرة اليد </h1> 
+    </div>
+  </div>
+</div>
+<h1>Les sports individuels	الرياضات الفردية</h1>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le tennis de table.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le tennis de table</h1> 
+      <h1>Le ping-pong</h1> 
+      <h1>تنس الطاولة</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le tennis.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le tennis</h1>
+      <h1>التنس</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La course.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La course</h1> 
+      <h1>السباق</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La course à pied.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La course à pied</h1> 
+      <h1>الجري</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La course à moto.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La course à moto </h1> 
+      <h1>سباق موتوسيكل</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La pétanque.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La pétanque</h1> 
+      <h1>لعبه الكره الحديدية</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La danse.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La danse</h1> 
+      <h1>الرقص</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/L'équitation.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>L'équitation</h1> 
+      <h1>الفروسية</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le vélo.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le vélo</h1> 
+      <h1>ركوب الدراجات</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le cyclisme.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le cyclisme</h1>  
+      <h1>ركوب الدراجات</h1>  
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le golf.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le golf</h1> 
+      <h1>الجولف</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/rugby.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>le rugby</h1> 
+      <h1>الرجبي</h1>  
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le tir à l'arc.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le tir à l'arc </h1> 
+      <h1>رمى القوس</h1> 
+      
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La gymnastique.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La gymnastique </h1>  
+      <h1>الرياضة البدنية</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La randonnée.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La randonnée </h1>  
+      <h1>التنزه</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le jogging.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le jogging </h1>  
+      <h1>الركض</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La marche.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La marche</h1>  
+      <h1>المشي</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le yoga.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le yoga </h1>  
+      <h1>اليوجا</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le hockey.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le hockey</h1>  
+      <h1>الهوكي</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La pêche.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La pêche</h1>  
+      <h1>الصيد</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La chasse.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La chasse</h1>  
+      <h1>الصيد بالبندقية</h1> 
+      
+    </div>
+  </div>
+</div>
+<h1>Les sports extrêmes	الرياضات العنيفة</h1> 
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le judo.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le judo</h1>  
+      <h1>الجودو</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La danse.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La danse</h1>  
+      <h1>الرقص</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La lutte.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La lutte</h1>  
+      <h1>المصارعة</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le karaté.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le karaté</h1>  
+      <h1>الكاراتيه</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/L'escalade.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>L'escalade</h1>  
+      <h1>التسلق</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/L’escrime.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>L’escrime</h1>  
+      <h1>رياضة المبارزة</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La boxe.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La boxe</h1>  
+      <h1>الملاكمة</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le VTT.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le VTT </h1>  
+      <h1>vélo tout terrain </h1>  
+      <h1>ركوب الدراجة في المنحدرات</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le deltaplane.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le deltaplane</h1>  
+      <h1>الطيران الشراعي</h1> 
+      
+    </div>
+  </div>
+</div>
+<h1>Les sports nautiques	/ Les sports de glisse</h1> 
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le rafting.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le rafting</h1>  
+      <h1>هبوط انهار بطواف هوائي</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le canyoning.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le canyoning</h1>  
+      <h1>تسلق الشلالات</h1> 
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La natation.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La natation</h1>  
+      <h1>السباحة</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/La plongé.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>La plongé</h1>  
+      <h1>الغطس/h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le kitesurf.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le kitesurf</h1>  
+      <h1>التزلج على الماء</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le surf.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le surf</h1>  
+      <h1>التزلج على الامواج</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<h1>العاب الجليد والتزلج</h1> 
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le ski.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le ski</h1>  
+      <h1>التزلج على جبل</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le patinage.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le patinage</h1>  
+      <h1>التزلج على جليد فى ساحه</h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Faire du roller.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Faire du roller</h1>  
+      <h1>تزلج على عجلات  </h1> 
+      
+    </div>
+  </div>
+</div>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="image" src="assets/Le skate.jpg" alt="Avatar" style="width:320px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Le skate </h1>  
+      <h1>التزلج بحذاء التزلج / تَزَلَّجَ</h1> 
+      
+         
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
